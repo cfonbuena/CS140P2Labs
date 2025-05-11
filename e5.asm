@@ -9,6 +9,8 @@ main:
     la $t0, A
     lw $t3, K
     ori $t1, $zero, 0
+    sll $t2, $t1, 2
+    add $t2, $t2, $t0
     
 loop:
     lw $t2, 0($t2)
