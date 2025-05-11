@@ -22,6 +22,7 @@ loop:
     add $t7, $t7, $t0
     bne $t3, $t2, loop
 
+    sw $t1, sum
     li $v0, 1
     move $a0, $t1
     syscall
